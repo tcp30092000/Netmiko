@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler
 SW1 = {
     'device_type':'cisco_ios',
-    'ip':'x.x.x.x', #dia chi tren SW
+    'ip':'10.215.26.241',
     'username':'vnpro',
     'password':'vnpro@123',
     'secret':'vnpro@321',
@@ -26,14 +26,18 @@ print(output)
 #     output =  net_connect.send_command('show ip int br')
 # print(output)
 
-giu_vlan=input('Nhap vlan muon giu: ')
-for i in range (1,int(them_vlan)+1,1):
-    if i != int(giu_vlan):
-        xoavlan=['no int vlan '+str(i)]
-        xoaipvlan=['no vlan '+str(i)]
-        net_connect.send_config_set(xoavlan)
-        net_connect.send_config_set(xoaipvlan)
-        output =  net_connect.send_command('show ip int br')
-print(output)
+# giu_vlan=input('Nhap vlan muon giu: ')
+# for i in range (1,int(them_vlan)+1,1):
+#     if i != int(giu_vlan):
+#         xoavlan=['no int vlan '+str(i)]
+#         xoaipvlan=['no vlan '+str(i)]
+#         net_connect.send_config_set(xoavlan)
+#         net_connect.send_config_set(xoaipvlan)
+#         output =  net_connect.send_command('show ip int br')
+# print(output)
+
+
+
+
 
 
