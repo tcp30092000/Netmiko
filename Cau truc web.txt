@@ -1,0 +1,13 @@
+<DOCTYPE HTML>
+<html>
+
+<head>
+Nội dung của tab
+</head>
+
+<body>
+Nội dung trang web
+</body>
+
+</html>
+
