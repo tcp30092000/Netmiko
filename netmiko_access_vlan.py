@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler
 SW = {
     'device_type' : 'cisco_ios',
-    'ip' : '10.215.26.241',
+    'ip' : '192.168.242.132',
     'username' : 'vnpro',
     'password' : 'vnpro@123',
     'secret' : 'vnpro@321'
