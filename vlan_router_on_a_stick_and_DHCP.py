@@ -23,9 +23,11 @@ net_connect_2.enable()
 
 #Lien ket duong trunk giua Switch va Router
 no_shut = ['int e0/0','no shut']
+net_connect_1.send_config_set(no_shut)
+
 trunk_switch = ['int e0/0','sw trunk encapsulation dot1q','sw mode trunk']
 net_connect_2.send_config_set(trunk_switch)
-net_connect_1.send_config_set(no_shut)
+
 #Tao sub-interface cho Router
 so_vlan=input('Nhap so vlan muon tao: ')
 for i in range (10,int(so_vlan)*10+1,10):
